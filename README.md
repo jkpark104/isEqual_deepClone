@@ -88,7 +88,7 @@ const result = data.constructor === Array ? [] : {};
   return Object.is(data1, data2);
 ```
 
-- (1) 에서 필터링 되지 않은 데이터 (`원시값` | `함수` | `(함수,Array,Object)가 아닌 객체들`)들에 대해선 `===` 보다 정확한 비교(`eg. NaN, +0vs-0`)가 가능한 `Object.is` 메서드를 통해 값을 비교했습니다.
+- 필터링 되지 않은 데이터 (`원시값` | `함수` | `(함수,Array,Object)가 아닌 객체들`)들에 대해선 `===` 보다 정확한 비교(`eg. NaN, +0vs-0`)가 가능한 `Object.is` 메서드를 통해 값을 비교했습니다.
 
 # 3. 결과
 
